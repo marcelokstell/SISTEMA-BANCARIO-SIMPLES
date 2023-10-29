@@ -1,0 +1,61 @@
+API Restful simulando um banco digital
+
+Sobre o projeto
+
+O projeto consiste em uma API para cadastro e atualizalão de conta bancária de um banco digital que usa o formato JSON para leitura e escrita, tendo por linguagem o JavaScript utilizando o NodeJS.
+
+Entidades da API
+
+A entidade Cadastrar possui os seguintes atributos:
+nome, 
+cpf, 
+data_nascimento, 
+telefone, 
+email, 
+senha 
+
+Entidade Atulizar conta possui os seguintes atributos:
+
+nome, 
+cpf, 
+data_nascimento, 
+telefone, 
+email, 
+senha
+
+Entidade Listar conta possui os seguintes atributos:
+
+Não recebe parâmetros do body e deverá devolver objeto com com todas as cotas cadastradas.
+
+A entidade Atualizar Dados de Conta possui os seguintes atributos:
+
+Receberá do body campo específico para atualização.
+
+
+Rotas da API
+
+Metódo	URL	Descrição	Autenticação
+
+GET	/Contas	retorna a lista de contas no banco
+POST/Contas	cria conta no Banco
+PUT/contas/:numero atualiza todos os dados de uma conta especifica
+PATCH/:numero/nome Atualiza determinado dado de uma conta específica
+
+
+Bibliotecas 
+
+O projeto foi estruturado:
+
+Express,
+Npm,
+Nodemon
+
+Uso da API
+
+Para iniciar a API localmente com as dependências já instaladas use o comando:
+
+npm run dev
+
+Para desligar a API use o comando:
+
+ctrl + C
